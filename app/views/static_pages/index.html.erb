@@ -1,1 +1,120 @@
-<p>hello</p>
+<!-- Intro Section -->
+<section class="inner-intro bg-img13 overlay-light parallax parallax-background2">
+    <div class="container">
+        <div class="row title">
+            <h2 class="h2">Online Résumé</h2>
+            <div class="page-breadcrumb">
+                <a class="scroll-down" href="#projects">Portfolio</a> | 
+                <a class="scroll-down" href="#Experience">Experience</a> | 
+                <a class="scroll-down" href="#Education">Education</a> | 
+                <a class="scroll-down" href="#Blog">Blog</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+<!-- End Intro Section -->
+
+<!-- About Me -->
+<section id="about" class="wow fadeIn ptb ptb-sm-80 animated" style="visibility: visible; animation-name: fadeIn;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 class="h4">About Me</h3>
+                <div class="spacer-15"></div>
+                <p class="lead">Integer tincidunt Cras dapibus. <a class="tipped tipper-attached" data-title="Sample Text" data-tipper-options="{&quot;direction&quot;:&quot;top&quot;}"><b>Vivamus elementum</b></a> ultricies nisi vel augue. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante dapibus.</p>
+            </div>
+        </div>
+
+            <!-- Skills -->
+            <!-- <div class="row">
+                <div class="page-icon-top">
+                    <div class="col-md-2 col-sm-4 col-xs-6"></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><h6 class="categories">Ruby & Rails</h6></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><h6 class="categories">Javascript</h6></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><h6 class="categories">Web design</h6></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><h6 class="categories">Web design</h6></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><h6 class="categories">Web design</h6></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><h6 class="categories">Web design</h6></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><h6 class="categories">Web design</h6></div>
+                </div>
+            </div> -->
+            
+            <!-- End Skills -->
+        </div>
+    </div>
+</section>
+
+<!-- End About Me -->
+
+<!-- Work Detail Section -->
+<section id="work" class="wow fadeInUp ptb ptb-sm-80 text-center animated" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="container">
+        <h3 id="projects">Projects</h3>
+        <div class="spacer-60"></div>
+        
+        <!-- work Filter -->
+        <div class="row">
+            <ul class="container-filter categories-filter">
+                <li><a class="categories active" data-filter="*">All</a></li>
+                <li><a class="categories" data-filter=".branding">Rails</a></li>
+                <li><a class="categories" data-filter=".design">Javascript</a></li>
+                <li><a class="categories" data-filter=".photo">API</a></li>
+                <li><a class="categories" data-filter=".coffee">CLI</a></li>
+                <li><a class="categories" data-filter=".coffee">CRUD</a></li>
+                <li><a class="categories" data-filter=".coffee">Full Stack</a></li>
+            </ul>
+        </div>
+        <!-- End Projects Filter -->
+
+        <div class="row container-masonry nf-col-3">
+
+            <div class="nf-item branding photo spacing">
+                <div class="item-box">
+                    <a class="cbox-gallary1" href=<%= asset_path "portfolio/2.jpg" %> title="Bookmarksgrove right at">
+                        <%= image_tag "portfolio/2.jpg", class: "item-container", alt: "1" %>
+                        <div class="item-mask">
+                            <div class="item-caption">
+                                <h5 class="white">Bookmarksgrove right at</h5>
+                                <p class="white">Branding, Design, Coffee</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nf-item branding photo spacing">
+                <div class="item-box">
+                    <a class="cbox-gallary1" href=<%= asset_path "portfolio/2.jpg" %> title="Bookmarksgrove right at">
+                        <%= image_tag "portfolio/2.jpg", class: "item-container", alt: "1" %>
+                        <div class="item-mask">
+                            <div class="item-caption">
+                                <h5 class="white">Bookmarksgrove right at</h5>
+                                <p class="white">Branding, Design, Coffee</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nf-item branding photo spacing">
+                <div class="item-box">
+                    <a class="cbox-gallary1" href=<%= asset_path "portfolio/2.jpg" %> title="Bookmarksgrove right at">
+                        <%= image_tag "portfolio/2.jpg", class: "item-container", alt: "1" %>
+                        <div class="item-mask">
+                            <div class="item-caption">
+                                <h5 class="white">Bookmarksgrove right at</h5>
+                                <p class="white">Branding, Design, Coffee</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+</section>
+<!-- End Projects Detail Section -->
