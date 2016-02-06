@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160205231839) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "project_tags", force: :cascade do |t|
     t.integer  "project_id"
     t.integer  "tag_id"
@@ -20,8 +23,8 @@ ActiveRecord::Schema.define(version: 20160205231839) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "project_tags", ["project_id"], name: "index_project_tags_on_project_id"
-  add_index "project_tags", ["tag_id"], name: "index_project_tags_on_tag_id"
+  add_index "project_tags", ["project_id"], name: "index_project_tags_on_project_id", using: :btree
+  add_index "project_tags", ["tag_id"], name: "index_project_tags_on_tag_id", using: :btree
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
