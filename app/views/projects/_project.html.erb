@@ -1,23 +1,32 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-      <!-- my form -->
+
       <%= form_for(@project, class: "contact-form")  do |f| %>
         <div class="form-field-wrapper">
           <%= f.text_field :title, class: "input-sm form-full", placeholder: "Title" %>
         </div>
+
         <div class="form-field-wrapper">
           <%= f.text_field :github, class: "input-sm form-full", placeholder: "Github Link" %>
         </div>
+
         <div class="form-field-wrapper">
-          <%= f.text_field :url, class: "input-sm form-full", placeholder: "Project Website Url" %>
+          <%= f.text_field :url, class: "input-sm form-full", placeholder: "Project Website" %>
         </div>
+
         <div class="form-field-wrapper">
           <%= f.text_area :description, class: "input-sm form-full", placeholder: "description" %>
         </div>
 
+        <div class="form-field-wrapper">
+          <%= collection_check_boxes(:project, :tag_ids, Tag.all, :id, :name) do |b| %>
+              <%= b.check_box %>&nbsp&nbsp<%= b.label %>
+          <% end %>
+        </div>
+
         <%= f.submit class: "btn btn-md btn-black form-full" %>
       <% end %>
-      <!-- end my form -->
+
       <div class="spacer-45"></div>
   </div>
 </div>
