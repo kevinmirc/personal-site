@@ -56,3 +56,19 @@ ProjectTag.create( project_id: 5, tag_id: 2)
 ProjectTag.create( project_id: 5, tag_id: 3)
 ProjectTag.create( project_id: 6, tag_id: 4)
 
+pitches = [
+            "Uber for dog walking", 
+            "Dynamic website to showcase your portfolio", 
+            "Twitter bot that tweets real time wind conditions",
+            "Disturb a friends day with a photo of a hairless cat",
+            "Scrpit to automatically route website visitors to your retail location",
+            "The quickest way for a developer connect to music"
+        ]
+
+i = 0
+Project.all.each do |project|
+    project.pitch = pitches[i]
+    project.save
+    i += 1
+end
+
