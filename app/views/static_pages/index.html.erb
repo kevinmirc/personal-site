@@ -23,7 +23,7 @@
                 <h3 class="h4">About Me</h3>
                 <div class="spacer-15"></div>
                 <p class="lead">I'm passionate about solving problems and creating value through software. Whether it's a platform to help an organization engage their community or a novel social app to make your friends laugh.</p>
-                <p>Simply put, I love to build things.</p>
+                <!-- <p>Simply put, I love to build things.</p> -->
                 <!-- <p>Simply put, I love to build things. Check out my 
                 <a class="tipped tipper-attached" data-title="Sample Text" data-tipper-options="{&quot;direction&quot;:&quot;top&quot;}"><b>projects</b></a> below.</p> -->
             </div>
@@ -34,7 +34,6 @@
         <!-- End Skills -->   
     </div>
 </section>
-
 <!-- End About Me -->
 
 <!-- Work Detail Section -->
@@ -47,28 +46,14 @@
         <div class="spacer-60"></div>
         
         <!-- work Filter -->
-    <div class="row">
-        <ul class="container-filter categories-filter">
-            <li><a class="categories active" data-filter="*">All</a></li>
-            <% Tag.all.each do |tag| %>
-                <li><a class="categories" data-filter=<%= "." + tag.name %>><%= tag.name %></a></li>
-            <% end %>
-        </ul>
-    </div>
-        
-
-
-        <!-- <div class="row">
+        <div class="row">
             <ul class="container-filter categories-filter">
                 <li><a class="categories active" data-filter="*">All</a></li>
-                <li><a class="categories" data-filter=".rails">Rails</a></li>
-                <li><a class="categories" data-filter=".design">Javascript</a></li>
-                <li><a class="categories" data-filter=".photo">API</a></li>
-                <li><a class="categories" data-filter=".coffee">CLI</a></li>
-                <li><a class="categories" data-filter=".coffee">CRUD</a></li>
-                <li><a class="categories" data-filter=".coffee">Full Stack</a></li>
+                <% Tag.all.each do |tag| %>
+                    <li><a class="categories" data-filter=<%= "." + tag.name %>><%= tag.name %></a></li>
+                <% end %>
             </ul>
-        </div> -->
+        </div>
 
         <!-- End Projects Filter -->
         <div class="row container-masonry nf-col-3">
@@ -89,57 +74,6 @@
                 </div>
             <% end %>
         </div>
-
-
-
-        <div class="row container-masonry nf-col-3">
-
-            <div class="nf-item rails photo spacing">
-                <div class="item-box">
-                    <a class="cbox-gallary1" href=<%= asset_path "portfolio/2.jpg" %> title="Bookmarksgrove right at">
-                        <%= image_tag "portfolio/2.jpg", class: "item-container", alt: "1" %>
-                        <div class="item-mask">
-                            <div class="item-caption">
-                                <h5 class="white">Bookmarksgrove right at</h5>
-                                <p class="white">rails, Design, Coffee</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="nf-item rails photo spacing">
-                <div class="item-box">
-                    <a class="cbox-gallary1" href=<%= asset_path "portfolio/2.jpg" %> title="Bookmarksgrove right at">
-                        <%= image_tag "portfolio/2.jpg", class: "item-container", alt: "1" %>
-                        <div class="item-mask">
-                            <div class="item-caption">
-                                <h5 class="white">Bookmarksgrove right at</h5>
-                                <p class="white">rails, Design, Coffee</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="nf-item photo spacing">
-                <div class="item-box">
-                    <a class="cbox-gallary1" href=<%= asset_path "portfolio/2.jpg" %> title="Bookmarksgrove right at">
-                        <%= image_tag "portfolio/2.jpg", class: "item-container", alt: "1" %>
-                        <div class="item-mask">
-                            <div class="item-caption">
-                                <h5 class="white">Bookmarksgrove right at</h5>
-                                <p class="white">rails, Design, Coffee</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-
-        </div>
-
     </div>
-
 </section>
 <!-- End Projects Detail Section -->
