@@ -72,3 +72,17 @@ Project.all.each do |project|
     i += 1
 end
 
+p = Project.new(
+                title: "Bitcoin Stock Index",
+                description: "This program will find any publicly traded company's current stock value and 2014 revenue in USD and Bitcoin. It fetches real time financial data from the Intrinio API and scrapes the current value of bitcoin. A formula will convert the companies values to BTC or mBTC and print them to the command line.",
+                pitch: "Command Line application that converts any publicly traded company's value to bitcoin.",
+                github: "https://github.com/mirc89/bitcoin_stock_index"
+                )
+p.tag_ids = [3, 4]
+p.save
+p = nil
+
+
+
+
+
