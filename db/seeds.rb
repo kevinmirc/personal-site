@@ -1,7 +1,7 @@
 Project.create( title: "Dog Watch", 
                 github: "https://github.com/Skitelman/dogwatch", 
                 description: "A three person team building a full scale web app. This was my first time programing a project in a group and I think we did a pretty awesome job in a week.", 
-                url: "https://tranquil-forest-37758.herokuapp.com/"
+                url: "http://gutendog.herokuapp.com/"
               )
 Project.create( title: "Online Resume", 
                 github: "", 
