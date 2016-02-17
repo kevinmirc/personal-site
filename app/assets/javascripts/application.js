@@ -11,10 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require jquery_ujs
-// death of turbolink
-//= require_tree .
+
 
 //= require jquery-ui.min
 //= require plugin/jquery.easing
@@ -35,3 +35,5 @@
 //= require plugin/mediaelement-and-player.min
 //= require theme
 //= require navigation
+//= require turbolinks
+//= require_tree .
