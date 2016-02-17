@@ -57,17 +57,27 @@ ProjectTag.create( project_id: 5, tag_id: 3)
 ProjectTag.create( project_id: 6, tag_id: 4)
 
 pitches = [
-            "Uber for dog walking", 
-            "Dynamic website to showcase your portfolio", 
-            "Twitter bot that tweets real time wind conditions",
-            "Disturb a friends day with a photo of a hairless cat",
-            "Scrpit to automatically route website visitors to your retail location",
-            "The quickest way for a developer connect to music"
-        ]
+    "Uber for dog walking", 
+    "Dynamic website to showcase your portfolio", 
+    "Twitter bot that tweets real time wind conditions",
+    "Disturb a friends day with a photo of a hairless cat",
+    "Script to automatically route website visitors to a specified location.",
+    "The quickest way for a developer connect to music"
+]
+
+github_links = [
+    "https://github.com/Skitelman/dogwatch",
+    "https://github.com/mirc89/personal-site",
+    "https://github.com/mirc89/wind_tweeter",
+    "https://github.com/mirc89/send-a-sphynx",
+    "https://github.com/mirc89/auto_map",
+    "https://github.com/mirc89/music_now"
+]
 
 i = 0
 Project.all.each do |project|
     project.pitch = pitches[i]
+    project.github = github_links[i]
     project.save
     i += 1
 end
@@ -81,7 +91,6 @@ p = Project.new(
 p.tag_ids = [3, 4]
 p.save
 p = nil
-
 
 
 
