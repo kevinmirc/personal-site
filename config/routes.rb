@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :projects, only: [:new, :index, :create, :edit, :update, :show]
   resources :experiences, only: [:index, :show]
   resources :education, only: [:index, :show]
-  # resources :blogs, only: [:index, :show]
   root 'static_pages#index'
 
 
