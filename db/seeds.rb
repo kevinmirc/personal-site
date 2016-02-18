@@ -38,6 +38,7 @@ Tag.create( name: "API")
 Tag.create( name: "CLI")
 Tag.create( name: "CRUD")
 Tag.create( name: "Full Stack")
+# Tag.create( name: "Ember")
 
 ProjectTag.create( project_id: 1, tag_id: 1)
 ProjectTag.create( project_id: 1, tag_id: 2)
