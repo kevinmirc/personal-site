@@ -14,7 +14,6 @@ class ProjectsController < ApplicationController
 
   def create
     project = Project.new(project_params)
-    project.tag_ids = params['project']['tag_ids']
 
     if project.save
       redirect_to project_path(project)
@@ -30,7 +29,6 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     @project.assign_attributes(project_params)
-    @project.tag_ids = params['project']['tag_ids']
 
     if @project.save
       redirect_to project_path(@project)
@@ -45,3 +43,27 @@ class ProjectsController < ApplicationController
     params.require(:project).permit(:title, :github, :url, :description, :pitch)
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
