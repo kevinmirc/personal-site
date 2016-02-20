@@ -16,8 +16,6 @@
     <link rel="shortcut icon" type="image/x-icon" href=<%= asset_path "favicon.ico" %>>
     <link rel="icon" type="image/png" href=<%= asset_path "favicon.png" %>>
     <link rel="apple-touch-icon" href=<%= asset_path "favicon.png" %>>
-
-
 </head>
 
 <body class="full-intro">
@@ -25,30 +23,17 @@
     <!-- Site Wraper -->
     <div class="wrapper">
 
-        <%= render 'layouts/header' %>
-        <div class="spacer-90"></div>
+      <%= render 'layouts/header' %>
+      <div class="spacer-90"></div>
 
-        <%= yield %>
+      <%= yield %>
 
-
-        <%= render 'layouts/footer' %>
-
-        <!-- Scroll Top -->
-        <a class="scroll-top">
-            <i class="fa fa-angle-double-up"></i>
-        </a>
-        <!-- End Scroll Top -->
-
+      <%= render 'layouts/footer' %>
     </div>
     <!-- Site Wraper End -->
 
 
     <!-- JS -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-
-    
-
-
 </body>
 </html>
