@@ -58,7 +58,7 @@
             <% Project.all.each do |project| %>
                 <div class="nf-item <%= project.print_tags %> spacing">
                     <div class="item-box">
-                        <a href=<%= project_path(project) %> title="Bookmarksgrove right at">
+                        <a href=<%= project_path(project) %>>
                             <%= image_tag "portfolio/#{rand(10) + 1}.jpg", class: "item-container", alt: "1" %>
                             <div class="item-mask">
                                 <div class="item-caption">
