@@ -53,3 +53,6 @@ gem 'pry'
  
 gem 'jquery-turbolinks'
 
+gem 'execjs'
+gem 'therubyracer'
+
