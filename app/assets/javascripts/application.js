@@ -35,5 +35,4 @@
 //= require plugin/mediaelement-and-player.min
 //= require theme
 //= require navigation
-//= require turbolinks
 //= require_tree .
