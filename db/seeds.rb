@@ -15,8 +15,8 @@ Project.create( title: "Dog Watch",
               )
 Project.create(
                 title: "Job Tracker",
-                github: "",
-                description: "",
+                github: "https://github.com/prakashwaghwani/job-trackr-ember",
+                description: "A tool for job seekers to manage & track their outreach to employers. Similar to a sales CRM, users can add new 'Opportunities' and post updated about the status of that job. This powered by a Rails API backend and Ember front end.",
                 pitch: "A tool for job seekers to manage & track their outreach to employers",
                 url: "https://getjobtracker.herokuapp.com/",
                 tag_ids: [1, 2, 3, 5, 6],
