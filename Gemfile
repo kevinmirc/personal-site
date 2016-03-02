@@ -53,3 +53,6 @@ gem 'pry'
  
 gem 'jquery-turbolinks'
 
+#super analytics!!!!!
+gem 'keen'
+gem 'figaro'
