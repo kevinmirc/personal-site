@@ -20,7 +20,11 @@
                       <a target="_blank" href="#"><i class="fa fa-medium"></i></a>&nbsp
                       <a target="_blank" href="#"><i class="fa fa-facebook"></i></a> -->
                       <li>
-                        <%= link_to "Projects", projects_path %>
+                        <%# link_to "Projects", projects_path %>
+                        <%= link_to(projects_path) do %>
+                          Projects
+                          <% Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Projects"}) %>
+                        <% end %>
                       </li>
 
                       <!-- <li>
@@ -32,7 +36,18 @@
                       </li> -->
 
                       <li>
-                        <%= link_to "Blog", "https://medium.com/@kevinmircovich", target: "_blank" %>
+                        <%# link_to "Blog", "https://medium.com/@kevinmircovich", target: "_blank" %>
+                        <%= link_to("https://medium.com/@kevinmircovich", {target: "_blank"}) do %>
+                          Blog
+                          <% Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Blog"}) %>
+                        <% end %>
+                      </li>
+
+                      <li>
+                        <%= mail_to "kmircovich1@gmail.com", {target: "_blank"} do %>
+                          Contact
+                          <% Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Contact"}) %>
+                        <% end %>
                       </li>
                      <!--  <li>
                         <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
