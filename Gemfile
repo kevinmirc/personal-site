@@ -53,6 +53,9 @@ gem 'pry'
  
 gem 'jquery-turbolinks'
 
-gem 'execjs'
-gem 'therubyracer'
+#super analytics!!!!!
+gem 'keen'
+#for publishing asyc-ly
+gem "em-http-request", "~> 1.0"
 
+gem 'figaro'
