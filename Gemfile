@@ -55,4 +55,8 @@ gem 'jquery-turbolinks'
 
 #super analytics!!!!!
 gem 'keen'
+#for publishing asyc-ly
+gem "em-http-request", "~> 1.0"
+
+
 gem 'figaro'

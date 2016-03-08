@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
   def index
     @projects = Project.all
+    Keen.publish(:page_visit, {page: "projects", visitor: request.remote_ip})
   end
 
   def new
@@ -10,6 +11,7 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    Keen.publish(:page_visit, {page: "project-#{@project.id}", visitor: request.remote_ip})
   end
 
   def create
