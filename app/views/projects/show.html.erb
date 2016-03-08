@@ -13,9 +13,11 @@
           <p></p>
           <div class="spacer-15"></div>
           <%= link_to "Github Repo", @project.github, class: "btn-link-a", target: "_blank" %>
+            <!-- add keen event here -->
           <br>
           <% if @project.url != "" && @project.url != nil %>
             <%= link_to "See Application", @project.url, class: "btn-link-a", target: "_blank" %>
+            <!-- add keen event here -->
           <% end %>
         </div>
         
