@@ -8,6 +8,7 @@ class SendMeStuffController < ApplicationController
     # create a EastPost Address object (with params)
     # create an parcel object
     # verify address through EasyPost
+    EasyPost.api_key = ENV['easypost_test_key']
 
     from_address = Address.create(
       :street1 => params[:address][:street1],
