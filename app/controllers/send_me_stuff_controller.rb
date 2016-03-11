@@ -6,9 +6,9 @@ class SendMeStuffController < ApplicationController
 
   def create
     # create a EastPost Address object (with params)
-    # create an item obbject
-
+    # create an parcel object
     # verify address through EasyPost
+
     from_address = Address.create(
       :street1 => params[:address][:street1],
       :street2 => params[:address][:street2],
@@ -62,8 +62,8 @@ end
 #       :name => 'Sixt - Dania Maciel',
 #       :street1 => '2800 Leavenworth Street',
 #       :street2 => 'Suite A43',
-#       :city => '',
-#       :state => 'CZ',
+#       :city => 'San Francisco',
+#       :state => 'CA',
 #       :zip => '94133',
 #       :phone => '7276785785'
 #     )
