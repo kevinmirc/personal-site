@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :projects, only: [:index, :show]# :new, :create, :edit, :update]
   resources :experiences, only: [:index, :show]
   resources :education, only: [:index, :show]
+  resources :send_me_stuff, only: [:index]
+  post '/send_me_stuff' => 'send_me_stuff#create', as: "send_that_shit"
   root 'static_pages#index'
 
 
