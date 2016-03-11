@@ -1,0 +1,12 @@
+<div class="spacer-75"></div>
+  <div class="item-box">
+    <div class="item-container">
+      <% shipment.rates.each do |rate| %>
+        <h4><%= rate.carrier %> - <%= rate.service %></h4>
+        <p>Rate: $<%= rate.rate %></p>
+        <p>Retail rate: $<%= rate.retail_rate || "n/a" %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
+

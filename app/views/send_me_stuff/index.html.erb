@@ -1,0 +1,53 @@
+<div class="col-md-8 col-md-offset-2 text-center">
+  <h3>Send Me Stuff</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_tag send_that_shit_path %>
+
+      <p>Your Infromation</p>
+
+      <div class="form-field-wrapper">
+         <%= text_field_tag('[address]address1', "", {class: "input-sm form-full", placeholder: "Address 1"}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= text_field_tag('[address]address2', "", {class: "input-sm form-full", placeholder: "Address 2"}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= text_field_tag('[address]city', "", {class: "input-sm form-full", placeholder: "City"}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= text_field_tag('[address]state', "", {class: "input-sm form-full", placeholder: "State",  maxlength: 2}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= text_field_tag('[address]zip', "", {class: "input-sm form-full", placeholder: "Zip",  maxlength: 5}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= phone_field_tag('[address]phone', "", {class: "input-sm form-full", placeholder: "Phone"}) %>
+      </div>
+
+      <p>Item Infromation</p>
+
+      <%# select_tag "Predefined Parcel", options_for_select([ "No Predefined Package", "UPSLetter", "UPSExpressBox", "UPS25kgBox", "USPS Card", "USPS Letter", "USPS Flat", "USPS Parcel" ], "No Predefined Packag") %>
+
+      <div class="form-field-wrapper">
+        <%= text_field_tag('[parcel]length', "", {class: "input-sm form-full", placeholder: "Length (inches)"}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= text_field_tag('[parcel]width', "", {class: "input-sm form-full", placeholder: "Width (inches)",  maxlength: 2}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= text_field_tag('[parcel]height', "", {class: "input-sm form-full", placeholder: "Height (inches)",  maxlength: 5}) %>
+      </div>
+      <div class="form-field-wrapper">
+        <%= phone_field_tag('[parcel]weight', "", {class: "input-sm form-full", placeholder: "Weight (oz)"}) %>
+      </div>
+
+      <!-- item field -->
+      <div class="spacer-15"></div>
+      <div class="form-field-wrapper">
+        <%= submit_tag("See Rates", {class: "btn btn-md btn-black form-full"}) %>
+      </div>
+  </div>
+</div>
