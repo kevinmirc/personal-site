@@ -58,6 +58,36 @@
     color: #FFF;
 }
 
+// .tint {
+//   position: relative;
+//   float: left;
+//   margin-right: 20px;
+//   margin-bottom: 20px;
+//   cursor: pointer;
+//   box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+// }
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.5);
+  // transition: all .3s linear;
+}
+
+#cover-img-text {
+    // color: white;
+    color: rgba(255, 255, 255, 0.9);
+    // text-shadow: 2px 2px 14px black;
+}
+// .tint:hover:before { 
+//     background: none; 
+// }
+
 
 /*  General Style   ||-----------*/
 
@@ -2278,125 +2308,125 @@ height:100%;
     background-attachment: fixed;
 }
 
-.bg-img1 {
-    background-image: url("../img/full/01.jpg");
-}
+// .bg-img1 {
+//     background-image: url("../img/full/01.jpg");
+// }
 
-.bg-img2 {
-    background-image: url("../img/full/02.jpg");
-}
+// .bg-img2 {
+//     background-image: url("../img/full/02.jpg");
+// }
 
-.bg-img3 {
-    background-image: url("../img/full/03.jpg");
-}
+// .bg-img3 {
+//     background-image: url("../img/full/03.jpg");
+// }
 
-.bg-img4 {
-    background-image: url("../img/full/04.jpg");
-}
+// .bg-img4 {
+//     background-image: url("../img/full/04.jpg");
+// }
 
-.bg-img5 {
-    background-image: url("../img/full/05.jpg");
-}
+// .bg-img5 {
+//     background-image: url("../img/full/05.jpg");
+// }
 
-.bg-img6 {
-    background-image: url("../img/full/06.jpg");
-}
+// .bg-img6 {
+//     background-image: url("../img/full/06.jpg");
+// }
 
-.bg-img7 {
-    background-image: url("../img/full/07.jpg");
-}
+// .bg-img7 {
+//     background-image: url("../img/full/07.jpg");
+// }
 
-.bg-img8 {
-    background-image: url("../img/full/08.jpg");
-}
+// .bg-img8 {
+//     background-image: url("../img/full/08.jpg");
+// }
 
-.bg-img9 {
-    background-image: url("../img/full/09.jpg");
-}
+// .bg-img9 {
+//     background-image: url("../img/full/09.jpg");
+// }
 
-.bg-img10 {
-    background-image: url("../img/full/10.jpg");
-}
+// .bg-img10 {
+//     background-image: url("../img/full/10.jpg");
+// }
 
-.bg-img11 {
-    background-image: url("../img/full/11.jpg");
-}
+// .bg-img11 {
+//     background-image: url("../img/full/11.jpg");
+// }
 
-.bg-img12 {
-    background-image: url("../img/full/12.jpg");
-}
+// .bg-img12 {
+//     background-image: url("../img/full/12.jpg");
+// }
 
 .bg-img13 {
-    background-image: url("../img/full/13.jpg");
+    background-image: url("https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/cover-img.jpg");
 }
 
-.bg-img14 {
-    background-image: url("../img/full/14.jpg");
-}
+// .bg-img14 {
+//     background-image: url("../img/full/14.jpg");
+// }
 
-.bg-img15 {
-    background-image: url("../img/full/15.jpg");
-}
+// .bg-img15 {
+//     background-image: url("../img/full/15.jpg");
+// }
 
-.bg-img16 {
-    background-image: url("../img/full/16.jpg");
-}
+// .bg-img16 {
+//     background-image: url("../img/full/16.jpg");
+// }
 
-.bg-img17 {
-    background-image: url("../img/full/17.jpg");
-}
+// .bg-img17 {
+//     background-image: url("../img/full/17.jpg");
+// }
 
-.bg-img18 {
-    background-image: url("../img/full/18.jpg");
-}
+// .bg-img18 {
+//     background-image: url("../img/full/18.jpg");
+// }
 
-.bg-img19 {
-    background-image: url("../img/full/19.jpg");
-}
+// .bg-img19 {
+//     background-image: url("../img/full/19.jpg");
+// }
 
-.bg-img20 {
-    background-image: url("../img/full/20.jpg");
-}
+// .bg-img20 {
+//     background-image: url("../img/full/20.jpg");
+// }
 
-.bg-img21 {
-    background-image: url("../img/full/21.jpg");
-}
+// .bg-img21 {
+//     background-image: url("../img/full/21.jpg");
+// }
 
-.bg-img22 {
-    background-image: url("../img/full/22.jpg");
-}
+// .bg-img22 {
+//     background-image: url("../img/full/22.jpg");
+// }
 
-.bg-img23 {
-    background-image: url("../img/full/23.jpg");
-}
+// .bg-img23 {
+//     background-image: url("../img/full/23.jpg");
+// }
 
-.bg-img24 {
-    background-image: url("../img/full/24.jpg");
-}
+// .bg-img24 {
+//     background-image: url("../img/full/24.jpg");
+// }
 
-.bg-img25 {
-    background-image: url("../img/full/25.jpg");
-}
+// .bg-img25 {
+//     background-image: url("../img/full/25.jpg");
+// }
 
-.bg-img26 {
-    background-image: url("../img/full/26.jpg");
-}
+// .bg-img26 {
+//     background-image: url("../img/full/26.jpg");
+// }
 
-.bg-img27 {
-    background-image: url("../img/full/27.jpg");
-}
+// .bg-img27 {
+//     background-image: url("../img/full/27.jpg");
+// }
 
-.bg-img28 {
-    background-image: url("../img/full/28.jpg");
-}
+// .bg-img28 {
+//     background-image: url("../img/full/28.jpg");
+// }
 
-.bg-img29 {
-    background-image: url("../img/full/29.jpg");
-}
+// .bg-img29 {
+//     background-image: url("../img/full/29.jpg");
+// }
 
-.bg-img30 {
-    background-image: url("../img/full/30.jpg");
-}
+// .bg-img30 {
+//     background-image: url("../img/full/30.jpg");
+// }
 
 .border-b-box {
     padding: 25px;
@@ -2438,18 +2468,18 @@ height:100%;
     }
 
 
-    /*.inner-intro .container .title h2 {
-            float: none;
-        }
+    // .inner-intro .container .title h2 {
+    //         float: none;
+    //     }
 
-        .inner-intro .container .title p {
-            float: none;
-            margin-top: 0px;
-        }
-        .inner-intro .container .title .separator {
-            margin-left:auto;
-            margin-right:auto;
-        }*/
+    //     .inner-intro .container .title p {
+    //         float: none;
+    //         margin-top: 0px;
+    //     }
+    //     .inner-intro .container .title .separator {
+    //         margin-left:auto;
+    //         margin-right:auto;
+    //     }
 }
 
 /* ===================================================================================================== */
