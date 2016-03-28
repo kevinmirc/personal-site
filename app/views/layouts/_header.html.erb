@@ -42,6 +42,12 @@
                       </li>
 
                       <li>
+                        <%= link_to(contact_path) do %>
+                          Contact
+                        <% end %>
+                      </li>
+
+                      <li>
                         <%# link_to "Blog", "https://medium.com/@kevinmircovich", target: "_blank" %>
                         <%= link_to("https://medium.com/@kevinmircovich", {target: "_blank"}) do %>
                           Blog
@@ -49,11 +55,6 @@
                         <% end %>
                       </li>
 
-                      <li>
-                        <%= link_to(contact_path) do %>
-                          Contact
-                        <% end %>
-                      </li>
                      <!--  <li>
                         <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
                       </li>
