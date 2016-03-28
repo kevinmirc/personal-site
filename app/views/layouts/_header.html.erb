@@ -36,6 +36,12 @@
                       </li> -->
 
                       <li>
+                        <%= link_to(about_path) do %>
+                          About
+                        <% end %>
+                      </li>
+
+                      <li>
                         <%# link_to "Blog", "https://medium.com/@kevinmircovich", target: "_blank" %>
                         <%= link_to("https://medium.com/@kevinmircovich", {target: "_blank"}) do %>
                           Blog
@@ -44,9 +50,8 @@
                       </li>
 
                       <li>
-                        <%= mail_to "kmircovich1@gmail.com", {target: "_blank"} do %>
+                        <%= link_to(contact_path) do %>
                           Contact
-                          <%# Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Contact"}) %>
                         <% end %>
                       </li>
                      <!--  <li>
