@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :send_me_stuff, only: [:index]
   post '/send_me_stuff' => 'send_me_stuff#create', as: "send_that_shit"
   root 'static_pages#index'
+  get 'about' => 'static_pages#about', as: "about"
+  get 'contact' => 'static_pages#contact', as: "contact"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
