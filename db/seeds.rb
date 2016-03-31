@@ -8,7 +8,7 @@ fs = Tag.create( name: "Full Stack")  #6
 spreadleague = Project.create( 
                 title: "SpreadLeague", 
                 github: "", 
-                description: "A full stack rails aplication created for a client. I created a sharp UI using bootstrap. Developed the rails application from ground up. Integrated a sports data api to gather NFL data to seed the application's postgres database.", 
+                description: "A full stack rails aplication created for a client.", 
                 pitch: "Full scale web application I built and launched for a client",
                 url: "http://spreadleague.herokuapp.com/",
                 tag_ids: [1, 2, 3, 5, 6],
