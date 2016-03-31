@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
   has_many :project_tags
   has_many :tags, through: :project_tags
+  has_many :shindigs
 
   def print_tags
     string = ""
@@ -19,5 +20,15 @@ class Project < ActiveRecord::Base
       
     end
     string
+  end
+
+  def key_points=(array)
+    array.each do |string|
+      Shindig.create(project: self, key_point: string)
+    end
+  end
+
+  def key_points
+    shindigs.map {|s| s.key_point }
   end
 end

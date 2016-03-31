@@ -5,15 +5,20 @@ cli = Tag.create( name: "CLI")        #4
 crud = Tag.create( name: "CRUD")      #5
 fs = Tag.create( name: "Full Stack")  #6
 
-Project.create( title: "Dog Watch", 
-                github: "https://github.com/Skitelman/dogwatch", 
-                description: "A three person team building a full scale web app. This was my first time programing a project in a group and I think we did a pretty awesome job in a week.", 
-                pitch: "Uber for dog walking",
-                url: "http://gutendog.herokuapp.com/",
+spreadleague = Project.create( 
+                title: "SpreadLeague", 
+                github: "", 
+                description: "A full stack rails aplication created for a client. I created a sharp UI using bootstrap. Developed the rails application from ground up. Integrated a sports data api to gather NFL data to seed the application's postgres database.", 
+                pitch: "Full scale web application I built and launched for a client",
+                url: "http://spreadleague.herokuapp.com/",
                 tag_ids: [1, 2, 3, 5, 6],
-                image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/personal-site-dogwatch-img.png"
-              )
-Project.create(
+                image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/spreadleague.png"
+            )
+spreadleague.key_points = ["Developed the brand, business model, and full-stack Rails application for a client", "Developed user auth, an admin hierarchy, invitations system, payment processing with Stripe,
+and a cron jobs to source sports data from the web", "Created an algorithm to calculate winnings and standings for competing users", "Designed a sharp user interface by integrating a Bootstrap theme and creating sub menus"]
+spreadleague.save
+
+job_tracker = Project.create(
                 title: "Job Tracker",
                 github: "https://github.com/prakashwaghwani/job-trackr-ember",
                 description: "A tool for job seekers to manage & track their outreach to employers. Similar to a sales CRM, users can add new 'Opportunities' and post updated about the status of that job. This powered by a Rails API backend and Ember front end.",
@@ -22,7 +27,22 @@ Project.create(
                 tag_ids: [1, 2, 3, 5, 6],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/personal-site-jobtracker-img.png"
             )
-Project.create( title: "Online Resume", 
+job_tracker.key_points = ["Created an API in rails to handle the data for the Ember front-end application", "Connected multiple job listing APIs as a source of 'Opportunities' to add ", "Created a feature for users to asynchronously search multiple job listing sites and add any posting as a new 'Opportunity'"]
+job_tracker.save
+
+guten_dog = Project.create( title: "Guten Dog", 
+                github: "https://github.com/Skitelman/dogwatch", 
+                description: "A three person team building a full scale web app. This was my first time programing a project in a group and I think we did a pretty awesome job in a week.", 
+                pitch: "Uber for dog walking",
+                url: "http://gutendog.herokuapp.com/",
+                tag_ids: [1, 2, 3, 5, 6],
+                image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/personal-site-dogwatch-img.png"
+              )
+guten_dog.key_points = ["Created a notification system to asynchronously update users of dog walks and friendship statuses", "Aliased the User’s model allowing a user to be a Friend, Recipient (of a notification), Walker, and Owner", "Used jQuery to toggle the visibility of information in order to clear up the UI"]
+guten_dog.save
+
+
+portfolio = Project.create( title: "Portfolio", 
                 github: "https://github.com/mirc89/personal-site", 
                 description: "Created this very website to showcase my projects. The code is available on Github!",
                 pitch: "Dynamic website to showcase your portfolio",
@@ -30,7 +50,10 @@ Project.create( title: "Online Resume",
                 tag_ids: [1, 5, 6],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/personal-site-img.png"
                 )
-Project.create( title: "Wind Tweeter", 
+portfolio.key_points = ["Integrated a Bootstrap theme into Rails", "Created a Tag model to filter projects based on the technologies used", "Created dynamic show pages for each project.", "Integrated Keen.io to collect data on visitors interactions and event triggers."]
+portfolio.save
+
+wind_tweeter = Project.create( title: "Wind Tweeter", 
                 github: "https://github.com/mirc89/wind_tweeter", 
                 description: "I used the NOAA api to gather data on wind condition from a station in downtown st. petersburg. I connected that information to a twitter account to post real time updates on wind conditions to inform wind surfers and frisbee players (like myself).", 
                 pitch: "Twitter bot that tweets real time wind conditions",
@@ -38,7 +61,10 @@ Project.create( title: "Wind Tweeter",
                 tag_ids: [1, 3],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/wind-tweeter-img.png"
               )
-Project.create( 
+wind_tweeter.key_points = ["Collect the latest wind conditions from a weather station accessible through the NOAA API", "Used the twitter gem to programmatically tweet the latest wind speed, direction, and gust"]
+wind_tweeter.save
+
+send_a_sphynx = Project.create( 
                 title: "Send-A-Sphynx", 
                 github: "https://github.com/mirc89/send-a-sphynx", 
                 description: "I made this to play around with the Twillio Api and present that following week about how to get started with Twillio. This is a web application will send a photo of a sphynx (hairless cat) to any phone number the user desires. It's anonymous and a ton of fun.", 
@@ -47,7 +73,10 @@ Project.create(
                 tag_ids: [1, 3, 6],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/Screen+Shot+2016-03-01+at+1.30.09+PM.png"
               )
-Project.create(
+send_a_sphynx.key_points = ["Created a PhotoFetcher model that scrapes Photobucket for a random photo of a sphinx (hairless cat)", "Integrated Twilio to take the photo and send the message to the recipient"]
+send_a_sphynx.save
+
+autoMap = Project.create(
                 title: "autoMap", 
                 github: "https://github.com/mirc89/auto_map/blob/master/index.html", 
                 description: "A script that takes in the clients location on page load and instantly routes them to a specified location showing transit routes. I made this for a rental car location that is difficult to find. Since it's just a js script it can be added to the website and as potential customers visit the site, the get transit directions to the location automatically.",  
@@ -56,7 +85,10 @@ Project.create(
                 tag_ids: [2, 3],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/autoMap-img.png"
               )
-Project.create(
+autoMap.key_points = ["Created an javascript IFFE to get the client's location from the window navigator", "Integrated the Google Maps API to find most effective route using public transit", "Used the JS setTimeout method to prevent the map from appending without a location"]
+autoMap.save
+
+bitcoin_stock_index = Project.create(
                 title: "Bitcoin Stock Index",
                 github: "https://github.com/mirc89/bitcoin_stock_index",
                 description: "This program will find any publicly traded company's current stock value and 2014 revenue in USD and Bitcoin. It fetches real time financial data from the Intrinio API and scrapes the current value of bitcoin. A formula will convert the companies values to BTC or mBTC and print them to the command line.",
@@ -65,7 +97,10 @@ Project.create(
                 tag_ids: [3, 4],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/bitcoin-stock-index-img.png"
             )
-Project.create(
+bitcoin_stock_index.key_points = ["Created a scraper to get the most current value of Bitcoin to seed conversion formula", "Integrated Intrinio, a financial data API, to access information of any company the user requests  "]
+bitcoin_stock_index.save
+
+music_now = Project.create(
                 title: "music_now", 
                 github: "https://github.com/mirc89/music_now", 
                 description: "I spend a lot of time in the terminal and I also listen to music from four different platforms on my laptop. This CLI application is the FASTEST way to connect me to music, weather it's on YouTube, SoundCloud, iTunes, or Spotify.", 
@@ -74,12 +109,6 @@ Project.create(
                 tag_ids: [4],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/music_now-img.png"
               )
-
-
-
-
-
-
 
 
 

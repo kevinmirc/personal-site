@@ -11,8 +11,20 @@
           <div class="spacer-15"></div>
           <p><%= @project.description %></p>
           <p></p>
+
           <div class="spacer-15"></div>
-          <%= link_to "Github Repo", @project.github, class: "btn-link-a", target: "_blank" %>
+          <h4><%= "Some Things I built" if !@project.key_points.empty? %></h4>
+          <ul>
+            <% @project.key_points.each do |key_point| %>
+              <li><p><%= key_point %></p></li>
+            <% end %>
+          </ul>
+
+          <div class="spacer-15"></div>
+          <% if @project.github != "" && @project.github != nil %>
+            <%= link_to "Github Repo", @project.github, class: "btn-link-a", target: "_blank" %>
+            <!-- add keen event here -->
+          <% end %>
             <!-- add keen event here -->
           <br>
           <% if @project.url != "" && @project.url != nil %>

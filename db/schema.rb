@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160301184828) do
+ActiveRecord::Schema.define(version: 20160330200754) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,10 +37,22 @@ ActiveRecord::Schema.define(version: 20160301184828) do
     t.string   "image_url"
   end
 
+  create_table "shindigs", force: :cascade do |t|
+    t.integer  "project_id"
+    t.string   "key_point"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "shindigs", ["project_id"], name: "index_shindigs_on_project_id", using: :btree
+
   create_table "tags", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "project_tags", "projects"
+  add_foreign_key "project_tags", "tags"
+  add_foreign_key "shindigs", "projects"
 end
