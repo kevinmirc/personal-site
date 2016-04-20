@@ -34,7 +34,7 @@ job_tracker.save
 jarvis = Project.create(
                 title: "Jarvis",
                 github: "",
-                description: "A software extention to Amazon Alexa for fulfilling local deliveries for any product. The inital product was an integration to Postmates API and won my team first place in the AngelHack San Francisco hackathon.",
+                description: "A software extension to Amazon Alexa for fulfilling local deliveries for any product. The inital product was an integration to Postmates API and won my team first place in the AngelHack San Francisco hackathon.",
                 pitch: "Your personalized artificial intelligent butler.",
                 url: "https://alexajarvis.herokuapp.com/",
                 tag_ids: [1, 2, 3, 6, 7],
