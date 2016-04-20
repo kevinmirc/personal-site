@@ -40,7 +40,7 @@ jarvis = Project.create(
                 tag_ids: [1, 2, 3, 6, 7],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/jarvis-description.jpg"
             )
-jarvis.key_points = ["Developed the user experience and software arcitecture from end to end", "Created an web application for users to input their deliver preferences", "Created a secure API endpoint for Jarvis to recieve the users delivery preferences to fufill a delivery", "Developed the consumer facing brand and business pitch for the hackathon demo"]
+jarvis.key_points = ["Developed the user experience and software architecture from end to end", "Created an web application for users to input their delivery preferences", "Created a secure API endpoint for Jarvis to receive the users delivery preferences to fufill a delivery", "Developed the consumer facing brand and business pitch for the hackathon demo"]
 jarvis.save
 
 guten_dog = Project.create( title: "Guten Dog", 
