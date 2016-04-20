@@ -30,6 +30,18 @@ job_tracker = Project.create(
 job_tracker.key_points = ["Created an API in rails to handle the data for the Ember front-end application", "Connected multiple job listing APIs as a source of 'Opportunities' to add ", "Created a feature for users to asynchronously search multiple job listing sites and add any posting as a new 'Opportunity'"]
 job_tracker.save
 
+jarvis = Project.create(
+                title: "Jarvis",
+                github: "",
+                description: "A software extention to Amazon Alexa for fulfilling local deliveries for any product. The inital product was an integration to Postmates API and won my team first place in the AngelHack San Francisco hackathon.",
+                pitch: "Your personalized artificial intelligent butler.",
+                url: "https://alexajarvis.herokuapp.com/",
+                tag_ids: [1, 2, 3, 6],
+                image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/jarvis-description.jpg"
+            )
+jarvis.key_points = ["Developed the user experience and software arcitecture from end to end", "Created an web application for users to input their deliver preferences", "Created a secure API endpoint for Jarvis to recieve the users delivery preferences to fufill a delivery", "Developed the consumer facing brand and business pitch for the hackathon demo"]
+jarvis.save
+
 guten_dog = Project.create( title: "Guten Dog", 
                 github: "https://github.com/Skitelman/dogwatch", 
                 description: "A three person team building a full scale web app. This was my first time programing a project in a group and I think we did a pretty awesome job in a week.", 
