@@ -34,13 +34,13 @@ job_tracker.save
 jarvis = Project.create(
                 title: "Jarvis",
                 github: "",
-                description: "A software extension to Amazon Alexa for fulfilling local deliveries for any product. The inital product was an integration to Postmates API and won my team first place in the AngelHack San Francisco hackathon.",
+                description: "A software extension to Amazon Alexa for fulfilling local deliveries for any product. The initial product was an integration to Postmates API and won my team first place in the AngelHack San Francisco hackathon.",
                 pitch: "Your personalized artificial intelligent butler.",
                 url: "https://alexajarvis.herokuapp.com/",
                 tag_ids: [1, 2, 3, 6, 7],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/jarvis-description.jpg"
             )
-jarvis.key_points = ["Developed the user experience and software architecture from end to end", "Created an web application for users to input their delivery preferences", "Created a secure API endpoint for Jarvis to receive the users delivery preferences to fufill a delivery", "Developed the consumer facing brand and business pitch for the hackathon demo"]
+jarvis.key_points = ["Developed the user experience and software architecture from end to end", "Created an web application for users to input their delivery preferences", "Created a secure API endpoint for Jarvis to receive the users delivery preferences to fulfill a delivery", "Developed the consumer facing brand and business pitch for the hackathon demo"]
 jarvis.save
 
 guten_dog = Project.create( title: "Guten Dog", 
