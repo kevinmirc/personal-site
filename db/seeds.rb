@@ -4,6 +4,7 @@ api = Tag.create( name: "API")        #3
 cli = Tag.create( name: "CLI")        #4
 crud = Tag.create( name: "CRUD")      #5
 fs = Tag.create( name: "Full Stack")  #6
+IoT = Tag.create( name: "IoT")        #7
 
 spreadleague = Project.create( 
                 title: "SpreadLeague", 
@@ -36,7 +37,7 @@ jarvis = Project.create(
                 description: "A software extention to Amazon Alexa for fulfilling local deliveries for any product. The inital product was an integration to Postmates API and won my team first place in the AngelHack San Francisco hackathon.",
                 pitch: "Your personalized artificial intelligent butler.",
                 url: "https://alexajarvis.herokuapp.com/",
-                tag_ids: [1, 2, 3, 6],
+                tag_ids: [1, 2, 3, 6, 7],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/jarvis-description.jpg"
             )
 jarvis.key_points = ["Developed the user experience and software arcitecture from end to end", "Created an web application for users to input their deliver preferences", "Created a secure API endpoint for Jarvis to recieve the users delivery preferences to fufill a delivery", "Developed the consumer facing brand and business pitch for the hackathon demo"]
@@ -70,7 +71,7 @@ wind_tweeter = Project.create( title: "Wind Tweeter",
                 description: "I used the NOAA api to gather data on wind condition from a station in downtown st. petersburg. I connected that information to a twitter account to post real time updates on wind conditions to inform wind surfers and frisbee players (like myself).", 
                 pitch: "Twitter bot that tweets real time wind conditions",
                 url: "",
-                tag_ids: [1, 3],
+                tag_ids: [1, 3, 7],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/wind-tweeter-img.png"
               )
 wind_tweeter.key_points = ["Collect the latest wind conditions from a weather station accessible through the NOAA API", "Used the twitter gem to programmatically tweet the latest wind speed, direction, and gust"]
