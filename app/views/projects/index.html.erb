@@ -1,17 +1,36 @@
-<section class="">
-  <div class="container">
-    <br><br>
-  <div class="container">
-    <ul>
-      <% @projects.each do |project| %>
-        <a href=<%= project_path(project) %> class="link"><h6><%=project.title%></h6></a>
-        <p><%= project.pitch %><p>
-          <% project.tags.each do |tag| %>
-            &nbsp<em><%= tag.name %></em>
-          <% end %>
-        <br><br><br>
-      <% end %>
-    </ul>
-  </div>
-</section>
+<section id="work" class="wow fadeInUp ptb ptb-sm-80 text-center animated" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="container">
+        <h3>Projects</h3>
+        <div class="spacer-30"></div>
+        
+        <!-- work Filter -->
+        <div class="row">
+            <ul class="container-filter categories-filter">
+                <li><a class="categories active" data-filter="*">All</a></li>
+                <% Tag.all.each do |tag| %>
+                    <li><a class="categories" data-filter=<%= "." + tag.name %>><%= tag.name %></a></li>
+                <% end %>
+            </ul>
+        </div>
 
+        <!-- End Projects Filter -->
+        <div class="row container-masonry nf-col-3">
+            <% Project.all.each do |project| %>
+                <div class="nf-item <%= project.print_tags %> spacing">
+                    <div class="item-box">
+                        <a href=<%= project_path(project) %>>
+                            <%= image_tag project.image_url, class: "item-container" %>
+                            <div class="item-mask">
+                                <div class="item-caption">
+                                    <h5 class="white"><%= project.title %></h5>
+                                    <br>
+                                    <p class="white"><%= project.pitch %></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</section>

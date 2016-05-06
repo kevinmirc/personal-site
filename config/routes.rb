@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :experiences, only: [:index, :show]
   resources :education, only: [:index, :show]
   resources :send_me_stuff, only: [:index]
+  get 'hang_with_me' => 'static_pages#hang_with_me', as: 'hang_with_me'
   post '/send_me_stuff' => 'send_me_stuff#create', as: "send_that_shit"
   root 'static_pages#index'
   get 'about' => 'static_pages#about', as: "about"

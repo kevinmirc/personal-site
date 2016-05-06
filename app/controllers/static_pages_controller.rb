@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
   def contact
     
   end
+
+  def hang_with_me
+    
+  end
 end

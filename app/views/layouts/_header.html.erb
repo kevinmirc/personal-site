@@ -1,84 +1,91 @@
  <!-- HEADER -->
-        <header class="header">
-            <div class="container">
-              
-                <!-- logo -->
-              <div class="logo">
-                  <a href=<%= root_path %>>
-                    <h3>Kevin Mircovich</h3>
-                  </a>
-              </div>
+<header class="header">
+  <div class="container">
+    
+      <!-- logo -->
+    <div class="logo">
+        <a href=<%= root_path %>>
+          <h3>Kevin Mircovich</h3>
+        </a>
+    </div>
 
-               <!--End logo-->
+     <!--End logo-->
 
-                <!-- Navigation Menu -->
-                <nav class='navigation'>
-                    <ul>
-                      <!-- <br>
-                      <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>&nbsp
-                      <a target="_blank" href="#"><i class="fa fa-github"></i></a>&nbsp
-                      <a target="_blank" href="#"><i class="fa fa-medium"></i></a>&nbsp
-                      <a target="_blank" href="#"><i class="fa fa-facebook"></i></a> -->
-                      <li>
-                        <%# link_to "Projects", projects_path %>
-                        <%= link_to(projects_path) do %>
-                          Projects
-                          <%# Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Projects"}) %>
-                        <% end %>
-                      </li>
+      <!-- Navigation Menu -->
+      <nav class='navigation'>
+          <ul>
+            <!-- <br>
+            <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>&nbsp
+            <a target="_blank" href="#"><i class="fa fa-github"></i></a>&nbsp
+            <a target="_blank" href="#"><i class="fa fa-medium"></i></a>&nbsp
+            <a target="_blank" href="#"><i class="fa fa-facebook"></i></a> -->
+            <li>
+              <%# link_to "Projects", projects_path %>
+              <%= link_to(projects_path) do %>
+                Projects
+                <%# Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Projects"}) %>
+              <% end %>
+            </li>
 
-                      <!-- <li>
-                          <%# link_to "Experience", experiences_path %>
-                      </li>
+            <!-- <li>
+                <%# link_to "Experience", experiences_path %>
+            </li>
 
-                      <li>
-                          <%# link_to "Education", education_index_path %>
-                      </li> -->
+            <li>
+                <%# link_to "Education", education_index_path %>
+            </li> -->
 
-                      <!-- <li>
-                        <%# link_to(about_path) do %>
-                          About
-                        <%# end %>
-                      </li> -->
+            <!-- <li>
+              <%# link_to(about_path) do %>
+                About
+              <%# end %>
+            </li> -->
 
-                      <li>
-                        <%= link_to(contact_path) do %>
-                          Contact
-                        <% end %>
-                      </li>
 
-                      <li>
-                        <%# link_to "Blog", "https://medium.com/@kevinmircovich", target: "_blank" %>
-                        <%= link_to("https://medium.com/@kevinmircovich", {target: "_blank"}) do %>
-                          Blog
-                          <%# Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Blog"}) %>
-                        <% end %>
-                      </li>
+            <li>
+              <%= link_to(hang_with_me_path) do %>
+                Hang with me
+              <% end %>
+            </li>
 
-                     <!--  <li>
-                        <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#"><i class="fa fa-github"></i></a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#"><i class="fa fa-medium"></i></a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
-                      </li> -->
-                    </ul>
-                </nav>
-                <!--End Navigation Menu -->
-                  <br>
-                <!-- Start Social Icons -->
-                  <!-- <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a target="_blank" href="#"><i class="fa fa-github"></i></a></li>
-                  <li><a target="_blank" href="#"><i class="fa fa-medium"></i></a></li>
-                  <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                   -->
+            <li>
+              <%= link_to(contact_path) do %>
+                Contact
+              <% end %>
+            </li>
 
-                 <!-- Start Social Icons -->
-            </div>
-        </header>
-        <!-- END HEADER -->
+            <!-- <li>
+              <%# link_to "Blog", "https://medium.com/@kevinmircovich", target: "_blank" %>
+              <%# link_to("https://medium.com/@kevinmircovich", {target: "_blank"}) do %>
+                Blog
+                <%# Keen.publish(:link_click, {page: "home", link_location: "home-header", link: "Blog"}) %>
+              <%# end %>
+            </li> -->
+
+           <!--  <li>
+              <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#"><i class="fa fa-medium"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+            </li> -->
+          </ul>
+      </nav>
+      <!--End Navigation Menu -->
+        <br>
+      <!-- Start Social Icons -->
+        <!-- <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a target="_blank" href="#"><i class="fa fa-github"></i></a></li>
+        <li><a target="_blank" href="#"><i class="fa fa-medium"></i></a></li>
+        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+         -->
+
+       <!-- Start Social Icons -->
+  </div>
+</header>
+<!-- END HEADER -->
