@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry'
 end
 
 group :development do
@@ -45,11 +46,13 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'unicorn'
+  gem 'rails_12factor'
+end
+
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
-gem 'rails_12factor', group: :production
-
-gem 'pry'
  
 gem 'jquery-turbolinks'
 
@@ -61,7 +64,6 @@ gem "em-http-request", "~> 1.0"
 gem 'figaro'
 
 gem 'easypost'
-
 
 
 
