@@ -6,6 +6,18 @@ crud = Tag.create( name: "CRUD")      #5
 fs = Tag.create( name: "Full Stack")  #6
 IoT = Tag.create( name: "IoT")        #7
 
+jobtracker = Project.create(
+                title: "Job Tracker",
+                github: "",
+                description: "A tool for job seekers to manage and track their outreach to employers, similar to a CRM. Organizations can have their own white labeled system and give access to admins for collaberating with their job seekers on each opportunity. This helps University Career Centers, Trade Schools, and Recruiters have better career placement rates. The entire application is build in rails and includes a lot of ajax.",
+                pitch: "A tool for job seekers to manage and track their outreach to employers",
+                url: "http://jobtrackerbeta.com",
+                tag_ids: [1,2,5,6],
+                image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/jobtrackerv2-opp-index.png"
+                )
+jobtracker.key_points = ["Set up a production environment on a linix server with Nginx, Unicorn, and a git workflow to easily deploy to production", "Created a hierarchy of users that render completly different UI/UX", "Created asynchronous filtering of opportunities based on an opportunity's stages", "Implemented a clean and minimal design using a simple color palet and bootstrap theme"]
+jobtracker.save
+
 spreadleague = Project.create( 
                 title: "SpreadLeague", 
                 github: "", 
@@ -19,17 +31,17 @@ spreadleague.key_points = ["Developed the brand, business model, and full-stack 
 and a cron jobs to source sports data from the web", "Created an algorithm to calculate winnings and standings for competing users", "Designed a sharp user interface by integrating a Bootstrap theme and creating sub menus"]
 spreadleague.save
 
-job_tracker = Project.create(
-                title: "Job Tracker",
+job_tracker_ember = Project.create(
+                title: "Job Tracker Ember",
                 github: "https://github.com/prakashwaghwani/job-trackr-ember",
-                description: "A tool for job seekers to manage & track their outreach to employers. Similar to a sales CRM, users can add new 'Opportunities' and post updated about the status of that job. This powered by a Rails API backend and Ember front end.",
+                description: "An original deployment of Job Tracker using Ember. Similar to a sales CRM, users can add new 'Opportunities' and post updated about the status of that job. This powered by a Rails API backend and Ember front end.",
                 pitch: "A tool for job seekers to manage & track their outreach to employers",
                 url: "https://getjobtracker.herokuapp.com/",
                 tag_ids: [1, 2, 3, 5, 6],
                 image_url: "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/personal-site-jobtracker-img.png"
             )
-job_tracker.key_points = ["Created an API in rails to handle the data for the Ember front-end application", "Connected multiple job listing APIs as a source of 'Opportunities' to add ", "Created a feature for users to asynchronously search multiple job listing sites and add any posting as a new 'Opportunity'"]
-job_tracker.save
+job_tracker_ember.key_points = ["Created an API in rails to handle the data for the Ember front-end application", "Connected multiple job listing APIs as a source of 'Opportunities' to add ", "Created a feature for users to asynchronously search multiple job listing sites and add any posting as a new 'Opportunity'"]
+job_tracker_ember.save
 
 jarvis = Project.create(
                 title: "Jarvis",
