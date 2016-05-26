@@ -17,6 +17,5 @@ class StaticPagesController < ApplicationController
   end
 
   def resume
-    redirect_to "https://s3-us-west-2.amazonaws.com/kevinmircovich.com-images/Kevin+Mircovich+Resume.pdf"
   end
 end
