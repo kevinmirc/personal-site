@@ -27,12 +27,12 @@ class SendMeStuffController < ApplicationController
     )
 
     to_address = EasyPost::Address.create(
-      :name => 'Sixt - Dania Maciel',
-      :street1 => '2800 Leavenworth Street',
-      :street2 => 'Suite A43',
+      :name => 'Dania Maciel - Kevin Mircovich',
+      :street1 => '2010 Chestnut Street',
+      :street2 => 'apt. 205',
       :city => 'San Francisco',
       :state => 'CA',
-      :zip => '94133',
+      :zip => '94123',
       :phone => '7276785785'
     )
 
